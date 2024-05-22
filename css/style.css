@@ -146,4 +146,42 @@ a {
 	gap: 20px;
 }
 
-/* About End */
+
+
+/* position property */
+.cart-amount {
+    position: relative;
+}
+
+
+.zero {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+
+    position: absolute;
+
+    top: -12px;
+    left: 17px;
+}
+
+
+.before {
+    position: relative;
+}
+
+.before a::before{
+    content: '';
+    height: 9px;
+    width: 9px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 25px;
+    border-radius: 50%;
+
+
+}
