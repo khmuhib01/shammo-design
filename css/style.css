@@ -12,6 +12,7 @@ a {
 	text-decoration: none;
 }
 
+
 /* Header Part start*/
 
 .header-main {
@@ -52,46 +53,122 @@ a {
 .header-right ul li a:hover {
 	color: #c59d5f;
 }
+.nav_button{
+	background-color: #c59d5f;
+	padding: 20px 10px;
+}
+.nav_button a:hover{
+color:black!important;
+}
 
 /* Header Part End */
 
 /* Banner Part Start */
 
 .banner-main {
-	background-color: red;
-	height: 500px;
-	margin-bottom: 50px;
+	background-color: rgb(43, 41, 41);
+	height:800px;
+	/* margin-bottom: 50px; */
 }
 
 .banner-mid {
-	background-color: #c59d5f;
+	background-color: rgb(43, 41, 41);
 	width: 90%;
 	margin: auto;
 	display: flex;
-	height: 500px;
+	height:800px;
 }
 
 .banner-left {
 	width: 50%;
-	background-color: aqua;
+	/* background-color: aqua; */
 	display: flex;
 	align-items: center;
 }
 
 .banner-right {
 	width: 50%;
-	background-color: blueviolet;
+	overflow: hidden;
+	/* border-radius: 50%;
+	border-left: 40px solid black; */
+	
+	/* background-color: blueviolet; */
+}
+.banner-right img{
+	display: block;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius:50%;
+	border-left: 30px solid black;
+	
 }
 
 .banner-content {
-	background-color: chartreuse;
+	background-color: rgb(43, 41, 41);
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	height: 80%;
+}
+.banner-content .tagline{
+
+	background-color: #233143;
+	color: hsl(36, 47%, 57%);
+	width: 330px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	
+;
+
+}
+.triangle_left{
+	height: 0px;
+	width:0px;
+	border-top:20px solid transparent;
+	border-right:10px solid transparent;
+	border-left:50px solid rgb(43, 41, 41);
+	border-bottom: 20px solid transparent;
+	
+}
+.triangle_right{
+	height: 0px;
+	width:0px;
+	border-top:20px solid transparent;
+	border-right:10px solid transparent;
+	border-left:50px solid rgb(43, 41, 41);
+	border-bottom: 20px solid transparent;
+	transform: rotate(180deg);
+
+}
+.banner-content h6{
+	font-size: 20px;
+	font-weight: 100;
+	width:80%;
+}
+.banner-content h1{
+	font-size: 100px;
+	color: white;
+}
+.banner-content p{
+	font-size: 17px;
+	font-weight: 100;
+	color: white;
 }
 
-.button {
+.button{
 	display: flex;
 	gap: 20px;
-	background-color: red;
-	justify-content: flex-end;
+	justify-content: flex-start;
+	
+}
+.button button{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: hsl(36, 47%, 57%);
+	border: 0px;
+
 }
 
 /* Banner Part End */
@@ -99,31 +176,65 @@ a {
 /* About Start */
 
 .about-main {
-	background-color: #c59d5f;
-	height: 500px;
+	background-color: #39312A;
+	height: 800px;
 	margin-bottom: 200px;
 }
 
 .about-mid {
 	width: 90%;
-	background-color: aqua;
-	height: 500px;
+	/* background-color: aqua; */
+	height: 800px;
 	margin: auto;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .about-left {
-	background-color: yellow;
+	/* background-color: yellow; */
 	width: 50%;
+	height: 60%;
+
+
+}
+.about-left img{
+display: block;
+margin:auto;
+
+}
+.about-right {
+	/* background-color: red; */
+	width: 50%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.one h6{
+font-size: 25px;
+font-weight: 200;
+color: #c59d5f;
+margin-bottom: 10px;
+}
+.one h1 {
+	width: 60%;
+	font-size: 45px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+}
+.one p{
+	width: 60%;
+	font-size: 15px;
+	font-weight: 600;
+	color: rgb(222, 213, 213);
+	margin-bottom: 10px;
 }
 
-.about-right {
-	background-color: red;
-	width: 50%;
-}
 
 .two {
-	background-color: aqua;
+	/* background-color: aqua; */
 	display: flex;
 	gap: 20px;
 }
@@ -136,6 +247,7 @@ a {
 	padding: 20px 20px;
 	display: flex;
 	flex-direction: column;
+	width: 250px;
 	gap: 20px;
 }
 
@@ -145,5 +257,20 @@ a {
 	align-items: center;
 	gap: 20px;
 }
-
+.two-one p{
+	color: rgb(213, 213, 221);
+}
 /* About End */
+
+.three ul li{
+	font-size: 18px;
+	color: rgb(213, 213, 221);
+	padding: 10px 10px;
+}
+.four button{
+	background-color: #c59d5f			;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border: 0px;
+}
