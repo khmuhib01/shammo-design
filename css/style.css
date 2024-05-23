@@ -66,13 +66,17 @@ color:black!important;
 /* Banner Part Start */
 
 .banner-main {
-	background-color: rgb(43, 41, 41);
+	background-color: #141A1F;
 	height:800px;
+	background-image: url(../images/banner-bg-1.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 1;
 	/* margin-bottom: 50px; */
 }
 
 .banner-mid {
-	background-color: rgb(43, 41, 41);
+	/* background-color: rgb(43, 41, 41); */
 	width: 90%;
 	margin: auto;
 	display: flex;
@@ -89,6 +93,7 @@ color:black!important;
 .banner-right {
 	width: 50%;
 	overflow: hidden;
+	position: relative;
 	/* border-radius: 50%;
 	border-left: 40px solid black; */
 	
@@ -96,14 +101,17 @@ color:black!important;
 }
 .banner-right img{
 	display: block;
-	border-top-left-radius: 50%;
+	position: absolute;
+	right: -100px;
+	bottom: 0px;
+	/* border-top-left-radius: 50%;
 	border-bottom-left-radius:50%;
-	border-left: 30px solid black;
+	border-left: 30px solid black; */
 	
 }
 
 .banner-content {
-	background-color: rgb(43, 41, 41);
+	background-color: #141A1F;
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
@@ -117,6 +125,8 @@ color:black!important;
 	height: 40px;
 	display: flex;
 	align-items: center;
+	position: relative;
+	gap: 10px;
 	
 ;
 
@@ -126,8 +136,10 @@ color:black!important;
 	width:0px;
 	border-top:20px solid transparent;
 	border-right:10px solid transparent;
-	border-left:50px solid rgb(43, 41, 41);
+	border-left:50px solid #141A1F;
 	border-bottom: 20px solid transparent;
+	position: absolute;
+	left: 0px;
 	
 }
 .triangle_right{
@@ -135,15 +147,30 @@ color:black!important;
 	width:0px;
 	border-top:20px solid transparent;
 	border-right:10px solid transparent;
-	border-left:50px solid rgb(43, 41, 41);
+	border-left:50px solid #141A1F;
 	border-bottom: 20px solid transparent;
 	transform: rotate(180deg);
+	position: absolute;
+	right: 0px;
+	
 
 }
-.banner-content h6{
+.banner-content .tagline_txt{
 	font-size: 20px;
 	font-weight: 100;
 	width:80%;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
+	padding: 10px;
+}
+.banner-content .tagline_txt span {
+	text-align: center;
+	padding: 25px;
+	
 }
 .banner-content h1{
 	font-size: 100px;
