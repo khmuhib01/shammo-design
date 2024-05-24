@@ -205,7 +205,6 @@ color:black!important;
 .about-main {
 	background-color: #39312A;
 	height: 800px;
-	margin-bottom: 200px;
 }
 
 .about-mid {
@@ -295,9 +294,88 @@ margin-bottom: 10px;
 	padding: 10px 10px;
 }
 .four button{
-	background-color: #c59d5f			;
+	background-color: #c59d5f;
 	color: white;
 	font-size: 20px;
 	padding: 10px;
 	border: 0px;
+}
+
+/* home delivery start */
+
+.delivery-main{
+	height: 500px;
+	background-color: #141A1F;
+}
+
+.delivery-mid{
+	width: 70%;
+	height: 500px;
+	margin: auto;
+	/* background-color: blue; */
+	display: flex;
+}
+
+.delivery-left{
+	/* background-color: green; */
+	width: 50%;
+	position: relative;
+	/* margin-left: 200px; */
+	
+}
+.delivery-right{
+	/* background-color: orange; */
+	width: 50%;
+	position: relative;
+}
+
+.delivery-content{
+	background-color: #141A1F;
+	height: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+}
+.delivery-content h6{
+	color: #c59d5f;
+	font-size: 25px;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+.delivery-content h1{
+	color: white;
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 10px;
+
+}
+.delivery-content p {
+	color: rgb(222, 213, 213);
+	font-size: 15px;
+	width: 70%;
+	font-weight: 600;
+	margin-bottom: 15px;
+
+}
+
+.delivery-content button{
+	display: block;
+	padding: 15px 20px;
+	font-size: 18px;
+	color: white;
+	background-color: #c59d5f;
+}
+
+.delivery-right img{
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+
 }
